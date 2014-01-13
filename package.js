@@ -17,8 +17,6 @@ Package.on_test(function (api) {
   var both = ['client', 'server'];
 
   // include accounts-password so Meteor.users exists
-  api.use(['roles','accounts-password','tinytest'], both);
+  api.use(['accounts-password','tinytest'], both);
 
-  api.add_files('tests/client.js', 'client');
-  api.add_files('tests/server.js', 'server');
 });
